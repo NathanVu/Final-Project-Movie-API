@@ -1,0 +1,9 @@
+<div *ngFor ="let movie of this.movieService.data">
+    <div>{{movie.title}}</div>
+<div>{{movie.vote_average}}</div>
+<div><img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt=""></div>
+
+</div>
+
+<button (click)="getPopularMovies()">get movies</button>
+
